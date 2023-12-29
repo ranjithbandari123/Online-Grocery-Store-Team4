@@ -8,7 +8,7 @@ import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
-import BannerSvg from '../assets/banner.svg';
+import BannerSvg from '../assets/banner.png';
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -22,7 +22,7 @@ const HomeScreen = () => {
     <>
       {!keyword ? (
         <>
-          <img src={BannerSvg} alt='banner' className='mb-5' />
+          <img src={BannerSvg} alt='banner' className='mb-5 w-100'  />
           <h1>Best Sellers</h1>
           <ProductCarousel />
         </>
